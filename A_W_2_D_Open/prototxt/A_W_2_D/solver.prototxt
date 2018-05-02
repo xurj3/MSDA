@@ -1,0 +1,14 @@
+net: "prototxt/A_W_2_D/train_val.prototxt"
+test_iter: 498
+test_interval: 20
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.2
+display: 10
+stepsize: 400
+max_iter: 1200
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 20
+snapshot_prefix: "snapshot/A_W_2_D/trained"
+solver_mode: GPU
