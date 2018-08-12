@@ -236,9 +236,9 @@ for step in range(steps):
             torch.save(s1_classifier.state_dict(), os.path.join(snapshot, "p2_s1_cls_" + str(step) + "_" + str(cls_epoch) + ".pth"))
             torch.save(s2_classifier.state_dict(), os.path.join(snapshot, "p2_s2_cls_" + str(step) + "_" + str(cls_epoch) + ".pth"))
 
-        extractor.eval()
-        s1_classifier.eval()
-        s2_classifier.eval()
+        extractor.train()
+        s1_classifier.train()
+        s2_classifier.train()
             
     # Part 3: train discriminator and generate mix feature
     print "#################### Part3 ####################"
